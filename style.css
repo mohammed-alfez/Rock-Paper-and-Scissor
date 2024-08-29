@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background: linear-gradient(45deg,#0061ff,#60efff);  
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.container{   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #caf0f8;
+    font-size: 15px;
+    font-weight: bold;
+}
