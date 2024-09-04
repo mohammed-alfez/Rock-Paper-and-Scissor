@@ -1,9 +1,9 @@
-let stone = document.querySelector("#rock");
+let rock = document.querySelector("#rock");
 let paper = document.querySelector("#paper");
 let scissor = document.querySelector("#scissor");
 let reset_Btn = document.querySelector("#resetBtn");
 
-stone.addEventListener("click", () => opponent("stone"));
+rock.addEventListener("click", () => opponent("rock"));
 paper.addEventListener("click", () => opponent("paper"));
 scissor.addEventListener("click", () => opponent("scissor"));
 
@@ -42,7 +42,7 @@ const opponent = (playerChoice) => {
   let computerChoice;
 
   if (randomNumber >= 0 && randomNumber < 1) {
-    computerChoice = "stone";
+    computerChoice = "rock";
   } else if (randomNumber >= 1 && randomNumber < 2) {
     computerChoice = "paper";
   } else {
@@ -53,9 +53,9 @@ const opponent = (playerChoice) => {
     score.tie++;
     result = `Computer chose ${computerChoice}  It's a tie!!`;
   } else if (
-    (playerChoice === "stone" && computerChoice === "scissor") ||
+    (playerChoice === "rock" && computerChoice === "scissor") ||
     (playerChoice === "scissor" && computerChoice === "paper") ||
-    (playerChoice === "paper" && computerChoice === "stone")
+    (playerChoice === "paper" && computerChoice === "rock")
   ) {
     score.win++;
     result = `Computer chose ${computerChoice} You won!! `;
