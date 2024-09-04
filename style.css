@@ -1,49 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-     background: linear-gradient(45deg,#0061ff,#60efff);  
+
+body {
+    background: linear-gradient(45deg, #0061ff, #60efff);
+    font-family: Arial, sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 30px;
 }
-.container{   
-    height: 85vh;
+
+.container {
+    height: 90vh; 
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px; 
 }
 
-.btn{
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #caf0f8;
-    font-size: 15px;
-    font-weight: bold;
+.container img {
+    width: 180px; 
+    height: 150px; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
 }
 
-#resetBtn{
+.container img:hover {
+    transform: scale(1.1); 
+}
+
+#stone {
+    width: 250px;
+    margin-right: -10px;
+}
+
+#scissor{
+    margin-left: 20px;
+}
+
+
+#resetBtn {
     position: absolute;
     top: 40%;
-    left: 49%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px 60px;
     border-radius: 15px;
-    background: linear-gradient(45deg,rgb(216, 116, 216),rgb(202, 61, 202));
+    background: linear-gradient(45deg, rgb(216, 116, 216), rgb(202, 61, 202));
     font-size: 15px;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease; 
 }
 
-#result{
+#resetBtn:active {
+    transform: translate(-50%, -50%) scale(0.95); 
+    background: linear-gradient(45deg, rgb(186, 86, 186), rgb(172, 41, 172)); 
+}
+
+
+#result {
     font-size: 6vmin;
     text-align: center;
     margin-top: 50px;
 }
 
-#score{
+#score {
     font-size: 6vmin;
     text-align: center;
     position: relative;
