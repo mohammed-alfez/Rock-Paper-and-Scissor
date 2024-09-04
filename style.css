@@ -38,10 +38,14 @@ h1 {
     margin-right: -10px;
 }
 
+#paper{
+    height: 180px;
+    width: 200px;
+}
+
 #scissor{
     margin-left: 20px;
 }
-
 
 #resetBtn {
     position: absolute;
