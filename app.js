@@ -1,4 +1,4 @@
-let stone = document.querySelector("#stone");
+let stone = document.querySelector("#rock");
 let paper = document.querySelector("#paper");
 let scissor = document.querySelector("#scissor");
 let reset_Btn = document.querySelector("#resetBtn");
